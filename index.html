@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Our Portfolio - Code Together</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html"><img src="images/logo1.png" class="logo" /></a>
+          <ul id="side-menu">
+            <li><a href="#header">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">sevices</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">contact us</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developers</p>
+          <h1>
+            Hi, Introducing <span>Code Together</span><br />from jammu & kashmir
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="title">About us</h1>
+            <p class="subtitle">
+            At Code Together, we specialize in creating dynamic, responsive websites tailored to your business needs. Our expert team leverages the latest technologies to deliver inovative, user-friendly solutions that enhance your online presence and drive growth. partner with us for cutting-edge web development services.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />Fullstack</li>
+                <li><span>Front-end</span><br />HTML CSS JS REACTJS</li>
+                <li><span>Back-end</span><br />Nodejs CSharp PHP</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />
+                  Fullstack Developer and freelancer.
+                </li>
+                <li><span>2022</span><br />Established Code Together.</li>
+                <li>
+                  <span>2021</span><br />Worked as a Package Manager at Wadiya
+                  Global.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br />BCA Graduate.</li>
+                <li><span>2022</span><br />Internship at Marvel Minds.</li>
+                <li><span>2020</span><br />Completed 10+2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="title">Our Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Front-end</h2>
+                    <p>We deliver top-tier front-end services, creating responsive, user-friendly interfaces with the latest technologies for optimal user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <h2>back-end</h2>
+                    <p>We offer robust back-end services, ensuring secure, scalable, and effecient server-side solutions using cutting-edge technologies for seamless functionality.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-merge"></i>
+                    <h2>Fullstack</h2>
+                    <p>We deliver comprehensive full-stack services, integrating advanced front-end and back-end technologies to create complete, seamless and high-performing websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">Our Work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="images/profile2.jpg" >
+                <div class="mask">
+                  <h3>TOK-BROKER</h3>
+                  <p>Our platform offers a seamless and efficient process for real estate transactions, from posting a property to finalizing the purchase. Our platform facilitates the negotiation process, allowing buyers and sellers to communicate and reach mutually beneficial agreements. By using our platform, users can save time, effort, and money throughout the entire real estate transaction process.</p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/profile2.jpg" >
+                <div class="mask">
+                  <h3>Wadiya Global</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia dolorum, eius blanditiis veniam ab fugit quis iste recusandae itaque.</p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/profile2.jpg">
+                <div class="mask">
+                  <h3>Anime Play</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia dolorum, eius blanditiis veniam ab fugit quis iste recusandae itaque.</p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="p-btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="title">Contact Us</h1>
+            <p><i class="fa-solid fa-envelope"></i>codetogetherr@gmail.com</p>
+            <p><i class="fa-solid fa-mobile"></i>+91 9149964278</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/9149964278" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="resume/Our-Resume.pdf" class="c-btn">Download our CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/xldrdenz" method="POST">
+              <input type="text" name="Name" placeholder="Enter your Name"  required>
+              <input type="email" id="email" name="Email" placeholder="Enter your Email-Address" required>
+              <textarea name="Message" rows="6" placeholder="Enter your Message" spellcheck="false" ></textarea required>
+                <button type="submit" class="s-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="enquery">
+          <h2>have a <span>Question?</span> <a href="#" class="q-btn">Ask Now</a></h2>
+         </div>
+        <div class="copyright">© Copyright by <span id="currentYear">2024</span> <span><a href="index.html">Code Together</a></span> | All Rights Reserved!</div>
+      </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+             tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+  <script>
+    var sidemenu = document.getElementById("side-menu");
+function openmenu(){
+  sidemenu.style.right = "0";
+  
+}
+function closemenu(){
+  sidemenu.style.right = "-200px";
+}
+  </script>
+  </body>
+</html>
