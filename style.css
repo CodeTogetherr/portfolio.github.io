@@ -8,13 +8,12 @@ body {
   background-color: #080808;
   color: #fff;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
   height: 0.5rem;
   width: 5px;
-  
 }
 *::-webkit-scrollbar-track {
   background-color: transparent;
@@ -23,8 +22,72 @@ html{
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--white);
+  background-color: #fff;
   border-radius: 10px;
+}
+
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background: #080808;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  border-radius: 60px;
+  animation: loader 0.8s linear infinite;
+  -webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 3px solid #fff;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 3px solid #e7e7e7;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 3px solid #a0a0a0;
+    border-left-color: transparent;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 3px solid #fff;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 3px solid #e7e7e7;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 3px solid #a0a0a0;
+    border-left-color: transparent;
+  }
 }
 
 #header {
@@ -77,7 +140,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-nav .fas{
+nav .fas {
   display: none;
 }
 .header-text {
@@ -360,24 +423,24 @@ form textarea {
   outline: none;
   resize: none;
   background: #262626;
-  padding: 15px ;
+  padding: 15px;
   margin: 15px 0;
   color: #fff;
   font-size: 18px;
   border-radius: 6px;
 }
-.copyright{
+.copyright {
   text-align: center;
   width: 100%;
   padding: 25px 0;
   font-weight: 500;
   font-size: 18px;
 }
-.copyright a{
+.copyright a {
   text-decoration: none;
   color: #498d8f;
 }
-.enquery{
+.enquery {
   text-align: center;
   width: 100%;
   padding: 25px 0;
@@ -387,34 +450,62 @@ form textarea {
   border-radius: 10px;
   text-transform: capitalize;
 }
-.enquery a{
+.enquery a {
   text-decoration: none;
   color: #498d8f;
 }
-.enquery a:hover{
+.enquery a:hover {
   color: #0b4244;
 }
 
 
+.page-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* add this line */
 
+  display: flex;
+  justify-content: flex-end;
+}
+.page-up a {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  /* background: #072d2e; */
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+
+ 
+}
+/* Add some animation to the button */
+#scrollToTopButton {
+  transition: transform 0.3s ease-in-out;
+}
+
+#scrollToTopButton:hover {
+  transform: translateY(-5px);
+}
 /* ===================media query================== */
 
-@media only screen and (max-width: 600px){
-  #header{
+@media only screen and (max-width: 600px) {
+  #header {
     background-image: url(images/profile1-m.png);
   }
-  .header-text{
+  .header-text {
     margin-top: 100%;
     font-size: 16px;
   }
-  .header-text h1{
+  .header-text h1 {
     font-size: 30px;
   }
-  nav .fas{
+  nav .fas {
     display: block;
     font-size: 25px;
   }
-  nav ul{
+  nav ul {
     background: #262626;
     position: fixed;
     top: 0;
@@ -425,39 +516,41 @@ form textarea {
     z-index: 2;
     transition: right 0.5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 25px;
   }
-  nav ul .fas{
+  nav ul .fas {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-  .subtitle{
+  .subtitle {
     font-size: 18px;
   }
-  .about-col-1, .about-col-2{
+  .about-col-1,
+  .about-col-2 {
     flex-basis: 100%;
   }
-  .about-col-1{
+  .about-col-1 {
     margin-bottom: 30px;
   }
-  .about-col-2{
+  .about-col-2 {
     font-size: 14px;
   }
-  .tab-links{
+  .tab-links {
     font-size: 16px;
     margin-right: 20px;
   }
-  .contact-left, .contact-right{
+  .contact-left,
+  .contact-right {
     flex-basis: 100%;
   }
-  .enquery{
+  .enquery {
     font-size: 14px;
   }
-  .copyright{
+  .copyright {
     font-size: 10px;
   }
 }
